@@ -1,0 +1,14 @@
+.bg-consultorio {
+    background-image: url("../imagenes/fondo-bn.png");
+    background-size: cover;
+    transition: 0.3s;
+
+    &:hover {
+        background-image: url("../imagenes/fondo-color.png");
+    }
+}
+
+.img-presentacion {
+    border: 2px solid #92e5ec14;
+    width: 100%;
+}

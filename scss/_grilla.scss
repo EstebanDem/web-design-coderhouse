@@ -1,0 +1,49 @@
+$anchoColumnaGrid: 1fr;
+$anchoFilaGrid: 1fr;
+
+.contenedor-grid-presentacion {
+    display: grid;
+    grid-template-columns: $anchoColumnaGrid $anchoColumnaGrid $anchoColumnaGrid $anchoColumnaGrid;
+    grid-template-rows: 0.4fr $anchoFilaGrid $anchoFilaGrid $anchoFilaGrid;
+    font-size:17px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "textoHome textoHome textoHome textoHome"
+      "imagen1 parrafo1 parrafo1 parrafo1"
+      "parrafo2 parrafo2 parrafo2 imagen2"
+      "imagen3 parrafo3 parrafo3 parrafo3";
+    gap: 5px 20px;
+    margin: 0 auto;
+  }
+
+@mixin textoGrilla {
+    align-self: center;
+    text-align: justify;
+    background: white;
+    padding: 8px;
+}
+
+.parrafo1 { 
+    @include textoGrilla;
+    grid-area: parrafo1;
+    border-radius: 10px 0px 0px 10px;
+}
+  
+.parrafo2 { 
+    @include textoGrilla;
+    grid-area: parrafo2;
+    border-radius: 0px 10px 10px 0px;
+}
+
+  
+.parrafo3 { 
+    @include textoGrilla;
+    grid-area: parrafo3;
+    border-radius: 10px 0px 0px 10px;
+}
+
+@for $i from 1 through  3 {
+    .imagen#{$i} {
+        grid-area: imagen#{$i};
+    }
+}

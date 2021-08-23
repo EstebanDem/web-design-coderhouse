@@ -1,0 +1,62 @@
+$radiusImg : 20%;
+
+.bg-celeste {
+    background: linear-gradient(0deg, #53efe2b3, #92dcffb3 100%);
+    backdrop-filter: blur(6px);
+    border-bottom: 1px solid #bfbfbf;
+}
+
+.p-bold {
+    font-weight: 600;
+}
+
+.borde-footer {
+    border-right:1px solid white;
+}
+
+.borde-footer:last-child {
+    border:none;
+}
+
+.mt-6 {
+    margin-top:6em;
+}
+
+.img-equipo {
+    border-radius: $radiusImg;
+    width: 90%;
+}
+
+.img-equipamiento {
+    width: 90%;
+}
+
+.bg-equipo-celeste {
+    background: #87f3eb38;
+}
+
+.img-obraSocial {
+    border-radius: $radiusImg;
+    width: 80%;
+}
+
+.map-responsive {
+    overflow:hidden;
+    padding-bottom:40%;
+    position:relative;
+    height:0;
+
+    iframe {
+        left:0;
+        top:0;
+        height:100%;
+        width:100%;
+        position:absolute;
+    }
+}
+
+
+.img-servicio-lista {
+    width:100%;
+}
+
