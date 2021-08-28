@@ -4,10 +4,7 @@
   grid-template-rows: 0.4fr 1fr 1fr 1fr;
   font-size: 17px;
   grid-auto-flow: row;
-  grid-template-areas: "textoHome textoHome textoHome textoHome"
- "imagen1 parrafo1 parrafo1 parrafo1"
- "parrafo2 parrafo2 parrafo2 imagen2"
- "imagen3 parrafo3 parrafo3 parrafo3";
+  grid-template-areas: "textoHome textoHome textoHome textoHome" "imagen1 parrafo1 parrafo1 parrafo1" "parrafo2 parrafo2 parrafo2 imagen2" "imagen3 parrafo3 parrafo3 parrafo3";
   gap: 5px 20px;
   margin: 0 auto; }
 
@@ -56,11 +53,6 @@
   width: 100%; }
 
 @media (max-width: 768px) {
-  .borde-footer {
-    border-right: none;
-    border-bottom: 1px solid white; }
-  .borde-footer:last-child {
-    border: none; }
   .card {
     margin-bottom: 1em; } }
 
@@ -71,14 +63,14 @@
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     font-size: 17px;
     grid-auto-flow: row;
-    grid-template-areas: "imagen1"
- "parrafo1"
- "imagen2"
- "parrafo2"
- "imagen3"
- "parrafo3";
+    grid-template-areas: "imagen1" "parrafo1" "imagen2" "parrafo2" "imagen3" "parrafo3";
     gap: 5px 20px;
-    margin: 0 auto; } }
+    margin: 0 auto; }
+  .borde-footer {
+    border-right: none;
+    border-bottom: 1px solid white; }
+  .borde-footer:last-child {
+    border: none; } }
 
 .bg-celeste {
   background: linear-gradient(0deg, #53efe2b3, #92dcffb3 100%);

@@ -1,12 +1,5 @@
 @media (max-width: 768px) {
-    .borde-footer {
-        border-right:none;
-        border-bottom:1px solid white;
-    }
     
-    .borde-footer:last-child {
-        border:none;
-    }
 
     .card {
         margin-bottom: 1em;
@@ -30,4 +23,14 @@
         gap: 5px 20px;
         margin: 0 auto;
       }
+      
+    .borde-footer {
+        border-right:none;
+        border-bottom:1px solid white;
+    }
+    
+    .borde-footer:last-child {
+        border:none;
+    }
+      
 }
